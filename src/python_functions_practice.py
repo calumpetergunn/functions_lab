@@ -22,9 +22,16 @@ def join_string(string_1, string_2):
 def add_string_as_number(string_1, string_2):
     return int(string_1) + int(string_2)
 
-def number_to_full_month_name(month):
-    import calendar
-    return calendar.month_name[month]
+# def number_to_full_month_name(month):
+#     import calendar
+#     return calendar.month_name[month]
+
+months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+def number_to_full_month_name(number):
+    number = number - 1
+    return months[number]
+print(number_to_full_month_name(12))
 
 def number_to_short_month_name(month):
     return number_to_full_month_name(month)[0:3]
