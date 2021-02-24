@@ -26,3 +26,6 @@ def number_to_full_month_name(month):
     import calendar
     return calendar.month_name[month]
 
+def number_to_short_month_name(month):
+    return number_to_full_month_name(month)[0:3]
+print(number_to_short_month_name(10))    
